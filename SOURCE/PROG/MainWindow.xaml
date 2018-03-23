@@ -1,0 +1,644 @@
+﻿<Window x:Class="KVAL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Таблиця Менделєєва" Height="700" Width="1050" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Icon="periodic-table.ico">
+    <Grid ShowGridLines="False" Background="Wheat">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style x:Key="lbl1" TargetType="Button">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="Margin" Value="5"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid ShowGridLines="False" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="11">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="lbl" TargetType="Label">
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="FontSize" Value="18"/>
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Label Grid.ColumnSpan="10" Style="{StaticResource lbl}" Background="LightBlue" Content="Групи"/>
+            <Label Grid.Column="0" Style="{StaticResource lbl}" Content="I" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="1" Style="{StaticResource lbl}" Content="II" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="2" Style="{StaticResource lbl}" Content="III" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="3" Style="{StaticResource lbl}" Content="IV" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="4" Style="{StaticResource lbl}" Content="V" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="5" Style="{StaticResource lbl}" Content="VI" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="6" Style="{StaticResource lbl}" Content="VII" Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Column="7" Grid.ColumnSpan="3" Style="{StaticResource lbl}" Content="VIII" Grid.Row="1" Background="LightBlue"/>
+        </Grid>
+        <Label Grid.Row="0" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="5" Content="Періоди"/>
+        <Label Grid.Row="0" Grid.Column="1" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="Ряди"/>
+        <Label Grid.Row="1" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="I"/>
+        <Label Grid.Row="1" Grid.Column="1" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="1"/>
+
+        <Button Grid.Row="1" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click">
+            <TextBlock FontSize="26">H
+                <Label FontSize="18" Margin="0,0,0,10">1</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="11" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_2">
+            <TextBlock FontSize="26">He
+                <Label FontSize="18" Margin="0,0,0,10">2</Label>
+            </TextBlock>
+        </Button>
+
+        <Label Grid.Row="2" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="II"/>
+        <Label Grid.Row="2" Grid.Column="1" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="2"/>
+        <Button Grid.Row="2" Grid.Column="2" Background="#FFCB4444"  Style="{StaticResource lbl1}" Click="Button_Click_3">
+            <TextBlock FontSize="26">Li
+                <Label FontSize="18" Margin="0,0,0,10">3</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="3" Background="#FFCB4444"  Style="{StaticResource lbl1}" Click="Button_Click_4">
+            <TextBlock FontSize="26">Be
+                <Label FontSize="18" Margin="0,0,0,10">4</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="4" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_5">
+            <TextBlock FontSize="26">B
+                <Label FontSize="18" Margin="0,0,0,10">5</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="5" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_6">
+            <TextBlock FontSize="26">C
+                <Label FontSize="18" Margin="0,0,0,10">6</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="6" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_7">
+            <TextBlock FontSize="26">N
+                <Label FontSize="18" Margin="0,0,0,10">7</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="7" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_8">
+            <TextBlock FontSize="26">O
+                <Label FontSize="18" Margin="0,0,0,10">8</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="8" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_9">
+            <TextBlock FontSize="26">F
+                <Label FontSize="18" Margin="0,0,0,10">9</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="11" Background="#FFFFF37A"  Style="{StaticResource lbl1}" Click="Button_Click_10">
+            <TextBlock FontSize="26">Ne
+                <Label FontSize="18" Margin="0,0,0,10">10</Label>
+            </TextBlock>
+        </Button>
+
+        <Label Grid.Row="3" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="III"/>
+        <Label Grid.Row="3" Grid.Column="1" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="3"/>
+        <Button Grid.Row="3" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_11">
+            <TextBlock FontSize="26">Na
+                <Label FontSize="18" Margin="0,0,0,10">11</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="3" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_12">
+            <TextBlock FontSize="26">Mg
+                <Label FontSize="18" Margin="0,0,0,10">12</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="4" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_13">
+            <TextBlock FontSize="26">Al
+                <Label FontSize="18" Margin="0,0,0,10">13</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="5" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_14">
+            <TextBlock FontSize="26">Si
+                <Label FontSize="18" Margin="0,0,0,10">14</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="6" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_15">
+            <TextBlock FontSize="26">P
+                <Label FontSize="18" Margin="0,0,0,10">15</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="7" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_16">
+            <TextBlock FontSize="26">S
+                <Label FontSize="18" Margin="0,0,0,10">16</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="8" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_17">
+            <TextBlock FontSize="26">Cl
+                <Label FontSize="18" Margin="0,0,0,10">17</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="11" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_18">
+            <TextBlock FontSize="26">Ar
+                <Label FontSize="18" Margin="0,0,0,10">18</Label>
+            </TextBlock>
+        </Button>
+
+        <Label Grid.Row="4" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Margin="5" Content="IV"/>
+        <Grid ShowGridLines="False" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="11">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="4"/>
+            <Label Grid.Row="1" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="5"/>
+            <Button Grid.Row="0" Grid.Column="1" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_19">
+                <TextBlock FontSize="18">K
+                <Label FontSize="14">19</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_20">
+                <TextBlock FontSize="18">Ca
+                <Label FontSize="14">20</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_31">
+                <TextBlock FontSize="18">Ga
+                <Label FontSize="14">31</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_32">
+                <TextBlock FontSize="18">Ge
+                <Label FontSize="14">32</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_33">
+                <TextBlock FontSize="18">As
+                <Label FontSize="14">33</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_34">
+                <TextBlock FontSize="18">Se
+                <Label FontSize="14">34</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_35">
+                <TextBlock FontSize="18">Br
+                <Label FontSize="14">35</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="10" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_36">
+                <TextBlock FontSize="18">Kr
+                <Label FontSize="14">36</Label>
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="1" Grid.Column="1" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_29">
+                <TextBlock FontSize="18">Cu
+                <Label FontSize="14">29</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_30">
+                <TextBlock FontSize="18">Zn
+                <Label FontSize="14">30</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_21">
+                <TextBlock FontSize="18">Sc
+                <Label FontSize="14">21</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_22">
+                <TextBlock FontSize="18">Ti
+                <Label FontSize="14">22</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_23">
+                <TextBlock FontSize="18">V
+                <Label FontSize="14">23</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="6" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_24">
+                <TextBlock FontSize="18">Cr
+                <Label FontSize="14">24</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_25">
+                <TextBlock FontSize="18">Mn
+                <Label FontSize="14">25</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="8" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_26">
+                <TextBlock FontSize="18">Fe
+                <Label FontSize="14">26</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="9" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_27">
+                <TextBlock FontSize="18">Co
+                <Label FontSize="14">27</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="10" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_28">
+                <TextBlock FontSize="18">Ni
+                <Label FontSize="14">28</Label>
+                </TextBlock>
+            </Button>
+        </Grid>
+        <Label Grid.Row="5" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Margin="5" Content="V"/>
+        <Grid ShowGridLines="False" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="11">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="6"/>
+            <Label Grid.Row="1" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="7"/>
+            <Button Grid.Row="0" Grid.Column="1" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_37">
+                <TextBlock FontSize="18">Rb
+                <Label FontSize="14">37</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_38">
+                <TextBlock FontSize="18">Sr
+                <Label FontSize="14">38</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_49">
+                <TextBlock FontSize="18">In
+                <Label FontSize="14">49</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_50">
+                <TextBlock FontSize="18">Sn
+                <Label FontSize="14">50</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_51">
+                <TextBlock FontSize="18">Sb
+                <Label FontSize="14">51</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_52">
+                <TextBlock FontSize="18">Te
+                <Label FontSize="14">52</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_53">
+                <TextBlock FontSize="18">I
+                <Label FontSize="14">53</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="10" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_54">
+                <TextBlock FontSize="18">Xe
+                <Label FontSize="14">54</Label>
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="1" Grid.Column="1" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_47">
+                <TextBlock FontSize="18">Ag
+                <Label FontSize="14">47</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_48">
+                <TextBlock FontSize="18">Cd
+                <Label FontSize="14">48</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_39">
+                <TextBlock FontSize="18">Y
+                <Label FontSize="14">39</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_40">
+                <TextBlock FontSize="18">Zr
+                <Label FontSize="14">40</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_41">
+                <TextBlock FontSize="18">Nb
+                <Label FontSize="14">41</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="6" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_42">
+                <TextBlock FontSize="18">Mo
+                <Label FontSize="14">42</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_43">
+                <TextBlock FontSize="18">Tc
+                <Label FontSize="14">43</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="8" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_44">
+                <TextBlock FontSize="18">Ru
+                <Label FontSize="14">44</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="9" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_45">
+                <TextBlock FontSize="18">Rh
+                <Label FontSize="14">45</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="10" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_46">
+                <TextBlock FontSize="18">Pd
+                <Label FontSize="14">46</Label>
+                </TextBlock>
+            </Button>
+        </Grid>
+        <Label Grid.Row="6" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Margin="5" Content="VI"/>
+        <Grid ShowGridLines="False" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="11">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="8"/>
+            <Label Grid.Row="1" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="9"/>
+            <Button Grid.Row="0" Grid.Column="1" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_55">
+                <TextBlock FontSize="18">Cs
+                <Label FontSize="14">55</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_56">
+                <TextBlock FontSize="18">Ba
+                <Label FontSize="14">56</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_67">
+                <TextBlock FontSize="18">Tl
+                <Label FontSize="14">81</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_68">
+                <TextBlock FontSize="18">Pb
+                <Label FontSize="14">82</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_69">
+                <TextBlock FontSize="18">Bi
+                <Label FontSize="14">83</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_70">
+                <TextBlock FontSize="18">Po
+                <Label FontSize="14">84</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_71">
+                <TextBlock FontSize="18">At
+                <Label FontSize="14">85</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="10" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_72">
+                <TextBlock FontSize="18">Rn
+                <Label FontSize="14">86</Label>
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="1" Grid.Column="1" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_65">
+                <TextBlock FontSize="18">Au
+                <Label FontSize="14">79</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_66">
+                <TextBlock FontSize="18">Hg
+                <Label FontSize="14">80</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Style="{StaticResource lbl1}" Click="Button_Click_57">
+                <TextBlock FontSize="18">La
+                <Label FontSize="14">57</Label>
+                </TextBlock>
+            <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF0074FF" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_58" Height="32" Margin="5,0,5,5" VerticalAlignment="Bottom">
+                <TextBlock FontSize="18">Hf
+                <Label FontSize="14">72</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_59">
+                <TextBlock FontSize="18">Ta
+                <Label FontSize="14">73</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="6" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_60">
+                <TextBlock FontSize="18">W
+                <Label FontSize="14">74</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_61">
+                <TextBlock FontSize="18">Re
+                <Label FontSize="14">75</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="8" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_62">
+                <TextBlock FontSize="18">Os
+                <Label FontSize="14">76</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="9" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_63">
+                <TextBlock FontSize="18">Ir
+                <Label FontSize="14">77</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="10" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_64">
+                <TextBlock FontSize="18">Pt
+                <Label FontSize="14">78</Label>
+                </TextBlock>
+            </Button>
+        </Grid>
+        <Label Grid.Row="7" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Margin="5" Content="VII"/>
+        <Grid ShowGridLines="False" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="11">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="10"/>
+            <Button Grid.Row="0" Grid.Column="1" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_73">
+                <TextBlock FontSize="18">Fr
+                <Label FontSize="14">87</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Background="#FFCB4444" Style="{StaticResource lbl1}" Click="Button_Click_74">
+                <TextBlock FontSize="18">Ra
+                <Label FontSize="14">88</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="10" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_82">
+                <TextBlock FontSize="18">Ds
+                <Label FontSize="14">110</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="9" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_81">
+                <TextBlock FontSize="18">Mt
+                <Label FontSize="14">109</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="8" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_80">
+                <TextBlock FontSize="18">Hs
+                <Label FontSize="14">108</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_79">
+                <TextBlock FontSize="18">Bh
+                <Label FontSize="14">107</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="6" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_78">
+                <TextBlock FontSize="18">Sg
+                <Label FontSize="14">106</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_77">
+                <TextBlock FontSize="18">Db
+                <Label FontSize="14">105</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_76">
+                <TextBlock FontSize="18">Rf
+                <Label FontSize="14">104</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Style="{StaticResource lbl1}" Click="Button_Click_75">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF0074FF" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <TextBlock FontSize="18">Ac
+                <Label FontSize="14">89</Label>
+                </TextBlock>
+            </Button>
+            <Label Grid.Row="1" Grid.Column="0" Background="LightBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5" Content="11"/>
+            <Button Grid.Row="1" Grid.Column="1" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_83">
+                <TextBlock FontSize="18">Rg
+                <Label FontSize="14">111</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_84">
+                <TextBlock FontSize="18">Cn
+                <Label FontSize="14">112</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="10" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_90">
+                <TextBlock FontSize="18">Og
+                <Label FontSize="14">118</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_89">
+                <TextBlock FontSize="18">Ts
+                <Label FontSize="14">117</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_88">
+                <TextBlock FontSize="18">Lv
+                <Label FontSize="14">116</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_87">
+                <TextBlock FontSize="18">Mc
+                <Label FontSize="14">115</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_86">
+                <TextBlock FontSize="18">Fl
+                <Label FontSize="14">114</Label>
+                </TextBlock>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Background="#FFFFF37A" Style="{StaticResource lbl1}" Click="Button_Click_85">
+                <TextBlock FontSize="18">Nh
+                <Label FontSize="14">113</Label>
+                </TextBlock>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

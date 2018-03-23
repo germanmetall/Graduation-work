@@ -1,0 +1,30 @@
+﻿<Window x:Class="KVAL.Vstup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вступ" Height="700" Width="1050" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="periodic-table.ico">
+    <Grid Background="Wheat">
+        <Label HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Cursor="Hand">
+            <TextBlock xml:space="preserve" TextAlignment="Center" MouseDown="TextBlock_MouseDown"><Bold>Дніпровський ліцей інформаційних технологій</Bold>
+<Bold>при Дніпропетровському національному університеті</Bold>
+<Bold>імені Олеся Гончара</Bold>
+                
+<Bold>Випускна робота</Bold>
+<TextBlock Margin="0,0,400,0">на тему:</TextBlock>
+<Bold>«Таблиця Менделєєва та фізичні</Bold>
+<Bold>характеристики елементів»</Bold>
+                
+                                Виконавець:
+                                ліцеїст 11-Г класу
+                                <Bold>Моссур Герман</Bold>
+                
+                                Науковий керівник:
+                                <Bold>Бондік І. Г.</Bold>
+                                Предметний керівник:
+                                <Bold>Юдін С.П.</Bold>
+                
+Дніпро
+2017
+            </TextBlock>
+        </Label>
+    </Grid>
+</Window>

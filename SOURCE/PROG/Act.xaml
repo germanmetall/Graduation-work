@@ -1,0 +1,109 @@
+﻿<Window x:Class="KVAL.Act"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Таблиця актиноїдів" Height="200" Width="1050" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="periodic-table.ico">
+    <Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style x:Key="lbl1" TargetType="Button">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="Margin" Value="5"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Background" Value="Green"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource lbl1}" Click="Button_Click">
+            <TextBlock FontSize="22">Th
+                <Label FontSize="22">90</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource lbl1}" Click="Button_Click_1">
+            <TextBlock FontSize="22">Pa
+                <Label FontSize="16">91</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource lbl1}" Click="Button_Click_2" >
+            <TextBlock FontSize="22">U
+                <Label FontSize="16">92</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="3" Style="{StaticResource lbl1}" Click="Button_Click_3" >
+            <TextBlock FontSize="22">Np
+                <Label FontSize="16">93</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="4" Style="{StaticResource lbl1}" Click="Button_Click_4" >
+            <TextBlock FontSize="22">Pu
+                <Label FontSize="16">94</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="5" Style="{StaticResource lbl1}" Click="Button_Click_5" >
+            <TextBlock FontSize="22">Am
+                <Label FontSize="16">95</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="6" Style="{StaticResource lbl1}" Click="Button_Click_6" >
+            <TextBlock FontSize="22">Cm
+                <Label FontSize="16">96</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="7" Style="{StaticResource lbl1}" Click="Button_Click_7" >
+            <TextBlock FontSize="22">Bk
+                <Label FontSize="16">97</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="8" Style="{StaticResource lbl1}" Click="Button_Click_8" >
+            <TextBlock FontSize="22">Cf
+                <Label FontSize="16">98</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="9" Style="{StaticResource lbl1}" Click="Button_Click_9" >
+            <TextBlock FontSize="22">Es
+                <Label FontSize="16">99</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="10" Style="{StaticResource lbl1}" Click="Button_Click_10" >
+            <TextBlock FontSize="22">Fm
+                <Label FontSize="12">100</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="11" Style="{StaticResource lbl1}" Click="Button_Click_11" >
+            <TextBlock FontSize="22">Md
+                <Label FontSize="12">101</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="12" Style="{StaticResource lbl1}" Click="Button_Click_12" >
+            <TextBlock FontSize="22">No
+                <Label FontSize="12">102</Label>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="13" Background="#FF0074FF" Style="{StaticResource lbl1}" Click="Button_Click_13" >
+            <TextBlock FontSize="22">Lr
+                <Label FontSize="16">103</Label>
+            </TextBlock>
+        </Button>
+    </Grid>
+</Window>

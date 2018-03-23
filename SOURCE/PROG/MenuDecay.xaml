@@ -1,0 +1,13 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="KVAL.MenuDecay"
+	x:Name="Window"
+	Title="MenuDecay"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+        <Label Content="β-розпад" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,240" MouseDown="Label_MouseDown_1"/>
+		<Label Content="α-розпад" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,360" MouseDown="Label_MouseDown"/>
+	</Grid>
+</Window>

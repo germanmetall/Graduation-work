@@ -1,0 +1,24 @@
+﻿<Window x:Class="KVAL.help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Довідник" Height="700" Width="1050" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="periodic-table.ico" Loaded="Window_Loaded">
+    <Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" x:Name="label" Content="α-Розпад" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" FontSize="48" Background="Pink"/>
+        <GroupBox Header="Розрахунок" Grid.Row="1" Grid.ColumnSpan="2" FontSize="30" Margin="5" Background="White">
+            <TextBlock Name="l1" Margin="30" Background="DarkKhaki" Text="У цій частині виконується розрахунок розпаду за формулою: &#13; E1(p, n) -> E2(p-2,n-2)+α(₂⁴)" TextAlignment="Center" TextWrapping="Wrap" FontSize="40"/>
+        </GroupBox>
+        <GroupBox Header="Моделювання" FontSize="30" Margin="5" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Background="White">
+            <TextBlock Name="l2" Margin="30" Background="Coral" Text="У цій частині моделюється незалежний від введених значень α-розпад елементу Be(4p, 5n), під час якого з нього вилітає α-частинка і утворюється ізотоп Be(2p, 3n)" FontSize="32" TextAlignment="Center" TextWrapping="Wrap"/>
+        </GroupBox>
+    </Grid>
+</Window>

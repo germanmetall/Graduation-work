@@ -1,0 +1,70 @@
+﻿<Window x:Class="KVAL.El"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Інформація про елемент" Height="700" Width="1050" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="periodic-table.ico">
+    <Grid ShowGridLines="False" Background="Wheat">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style x:Key="lbl" TargetType="Label">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="Margin" Value="10"/>
+                    <Setter Property="Background" Value="AntiqueWhite"/>
+                </Style>
+                <Style x:Key="lbl1" TargetType="Label">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="Margin" Value="10"/>
+                    <Setter Property="Background" Value="BurlyWood"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Style="{StaticResource lbl}" Name="el1" Grid.Row="0" Grid.Column="0">
+            <TextBlock TextAlignment="Center">
+            Умовне позначення<LineBreak/>елемента
+            </TextBlock>
+        </Label>
+        <Label Style="{StaticResource lbl1}" Name="el1a" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Порядковий номер" Style="{StaticResource lbl}" Name="el2" Grid.Row="2" Grid.Column="0"/>
+        <Label Style="{StaticResource lbl1}" Name="el2a" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="Атомна маса" Style="{StaticResource lbl}" Name="el3" Grid.Row="0" Grid.Column="1"/>
+        <Label Style="{StaticResource lbl1}" Name="el3a" Grid.Row="1" Grid.Column="1"/>
+        <Label Content="Min нейтронів" Style="{StaticResource lbl}" Name="el4" Grid.Row="2" Grid.Column="1"/>
+        <Label Style="{StaticResource lbl1}" Name="el4a" Grid.Row="3" Grid.Column="1"/>
+        <Label Content="Max нейтронів" Style="{StaticResource lbl}" Name="el5" Grid.Row="0" Grid.Column="2"/>
+        <Label Style="{StaticResource lbl1}" Name="el5a" Grid.Row="1" Grid.Column="2"/>
+        <Label Content="Ступені окиснення" Style="{StaticResource lbl}" Name="el6" Grid.Row="2" Grid.Column="2"/>
+        <Label Style="{StaticResource lbl1}" Name="el6a" Grid.Row="3" Grid.Column="2"/>
+        <Label Content="Густина" Style="{StaticResource lbl}" Name="el7" Grid.Row="0" Grid.Column="3"/>
+        <Label Style="{StaticResource lbl1}" Name="el7a" Grid.Row="1" Grid.Column="3"/>
+        <Label Content="t плавлення" Style="{StaticResource lbl}" Name="el8" Grid.Row="2" Grid.Column="3"/>
+        <Button Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10" Background="BurlyWood" Name="el8a" Grid.Row="3" Grid.Column="3" Click="el8a_Click"/>
+        <Label Content="t кипіння" Style="{StaticResource lbl}" Name="el9" Grid.Row="0" Grid.Column="4"/>
+        <Button Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10" Background="BurlyWood" Name="el9a" Grid.Row="1" Grid.Column="4" Click="el9a_Click"/>
+        <Label Content="Молярний об'єм" Style="{StaticResource lbl}" Name="el0" Grid.Row="2" Grid.Column="4"/>
+        <Label Style="{StaticResource lbl1}" Name="el0a" Grid.Row="3" Grid.Column="4"/>
+        <Button Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10" Background="BurlyWood" Grid.ColumnSpan="5" Grid.Row="4" Content="Докладна інформація про елемент" x:Name="wb" Click="web_Click"/>
+        <Label x:Name="tabl" Content="Таблиця всіх стабільних ізотопів елемента " Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" Style="{StaticResource lbl}"/>
+        <DataGrid Name="dg" Grid.Row="6" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="5" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserReorderColumns="False" IsReadOnly="True" FontSize="28" ColumnWidth="350" HorizontalScrollBarVisibility="Disabled"/>
+    </Grid>
+</Window>

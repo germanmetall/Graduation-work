@@ -1,0 +1,14 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="KVAL.MenuIso"
+	x:Name="Window"
+	Title="MenuIso"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+        <Label Content="-розпад" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,120" MouseDown="Label_MouseDown_2"/>
+		<Label Content="-розпад" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,240" MouseDown="Label_MouseDown_1"/>
+		<Label Content="-розпад" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,360" MouseDown="Label_MouseDown"/>
+	</Grid>
+</Window>

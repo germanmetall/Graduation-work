@@ -1,0 +1,27 @@
+﻿<Window x:Class="KVAL.ElSv"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ElSv" Height="400" Width="350" Loaded="Window_Loaded" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="Manual" Background="#FFCAE9FF">
+    <Window.Resources>
+        <XmlDataProvider x:Key="XMLData" Source="elements.xml" XPath="dataroot"/>
+    </Window.Resources>
+    <Grid>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="16"/>
+        <Label Name="lbl2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="16"/>
+        <Label ToolTip="У а.е.м." Name="lbl3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" FontSize="16"/>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0" FontSize="16"/>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" FontSize="16"/>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0" FontSize="16"/>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,250,0,0" FontSize="16"/>
+        <Label ToolTip="За загальноприйнятою системою" Name="lbl8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,290,0,0" FontSize="16"/>
+        <Button Content="Ізотопи" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="18" Width="342" Background="#FFB3FF97" Click="Button_Click" Height="30"/>
+        <Label Name="lbl9" Content="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" FontSize="16"/>
+        <Label Name="lbl10" Content="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,10,0" FontSize="16"/>
+        <Label Name="lbl11" Content="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,90,10,0" FontSize="16"/>
+        <Label Name="lbl12" Content="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,130,10,0" FontSize="16"/>
+        <Label Name="lbl13" Content="5" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,170,10,0" FontSize="16"/>
+        <Label Name="lbl14" Content="6" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,210,10,0" FontSize="16"/>
+        <Label Name="lbl15" Content="7" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,250,10,0" FontSize="16"/>
+        <Label Name="lbl16" Content="8" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,290,10,0" FontSize="16"/>
+    </Grid>
+</Window>

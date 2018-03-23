@@ -1,0 +1,8 @@
+﻿<Window x:Class="KVAL.Iso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Iso" Height="250" Width="600" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid>
+        <DataGrid Name="dg" HorizontalAlignment="Left" CanUserAddRows="False" CanUserDeleteRows="False" Margin="10,10,0,0" VerticalAlignment="Top" Height="200" Width="572" CanUserResizeColumns="False" CanUserReorderColumns="False" FontSize="18" FrozenColumnCount="1"/>
+    </Grid>
+</Window>
